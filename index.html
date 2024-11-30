@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Series Tracker</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="linkCon">
+            <label for="series-link">Ссылка на сериал:</label>
+            <input type="url" id="series-link" placeholder="Введите ссылку на сериал">
+        </div>
+        <div class="nameCon">
+            <label for="series-name">Название сериала:</label>
+            <input type="text" id="series-name" placeholder="Введите название сериала">
+        </div>
+        <div class="statusCon">
+            <label for="series-status">Статус сериала:</label>
+            <select id="series-status">
+                <option value="not-started">Не начат</option>
+                <option value="started">Начат</option>
+                <option value="viewed">Просмотрен</option>
+            </select>
+        </div>
+        <button id="add-series">Добавить</button>              
+    </div>
+
+    <div class="video">
+        <select id="status-filter">
+            <option value="all">Все</option>
+            <option value="not-started">Не начатые</option>
+            <option value="started">Начатые</option>
+            <option value="viewed">Просмотренные</option>
+        </select>
+        <ul id="series-list"></ul>
+    </div>
+
+    <script src="Logick.js" async defer></script>
+  </body>
+</html>
